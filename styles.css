@@ -12,7 +12,7 @@ body {
     animation: fade-in 0.5s
   }
 .headline{
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     margin: 25;
@@ -68,7 +68,7 @@ body {
 .courseOptions{
   display: flex;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   flex-direction: column;
 }
 
@@ -81,6 +81,9 @@ body {
   animation: fade-in 0.5s
 }
 
+.cookPotBox p {
+  animation: fade-in 0.5s ease-in-out;
+}
 
 .courseOptionsBox,
 .cookPotBox {
@@ -92,7 +95,7 @@ body {
   width: 150px;
 }
 h1 {
-  font-size: 20px;
+  font-size: 26px;
   margin: 10;
 }
 .courseOption{
