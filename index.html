@@ -1,10 +1,47 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    
-  </body>
-  <script type="text/javascript" src="main.js"></script>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>What's For Dinner?</title>
+</head>
+<body>
+  <header class="header">
+    <p class="headline">What's for Dinner?</p>
+    <button class="addRecipeButton">ADD A RECIPE
+      <!-- add the link here with the path -->
+    </button>
+  </header>
+  <main class="main">
+    <form>
+      <fieldset class="courseOptionsBox">
+        <div class="courseOptions">
+          <h1>What are you looking for?<span>*</span></h1>
+          <div class="courseOption">
+            <input type="radio" id="coursesOption1" name="courses" value="side" />
+            <label for="coursesOption1">Side</label>
+          </div>
+          <div class="courseOption">
+            <input type="radio" id="coursesOption2" name="courses" value="main dish" />
+            <label for="coursesOption2">Main Dish</label>
+          </div>
+          <div class="courseOption">
+            <input type="radio" id="coursesOption3" name="courses" value="dessert" />
+            <label for="coursesOption3">Dessert</label>
+          </div>
+          <div class="courseOption">
+            <input type="radio" id="coursesOption4" name="courses" value="entire Meal" />
+            <label for="coursesOption4">Entire Meal</label>
+          </div>
+          <button class="letsCookButton">LET'S COOK!
+            <!-- add the link here with the path -->
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    <div class="cookPotBox">
+      <img class="img" src="assets/cookpot.svg">
+    </div>  
+  </main> 
+</body>
+<script type="text/javascript" src="main.js"></script>
 </html>
