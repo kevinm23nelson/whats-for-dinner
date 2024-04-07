@@ -1,47 +1,68 @@
 body {
     background-image: url('assets/burger-friends.jpg');
     background-size: cover;
-    background-color: lightblue;
     margin: 0;
 } 
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 1100px; */
-    background-color: teal;
-    /* margin: 5px; */
+    background-color: #0fb9b1;
     width: 100%;
     animation: fade-in 0.5s
   }
 .headline{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
-    margin: 5;
+    margin: 25;
+    margin-left: 30;
   }
 
-button:hover {
-    background-color: white;
-    transition: all 0.5s;
-  }
+
 
 .addRecipeButton {
     background-color: rgb(223, 217, 217);
     color: black;
-    font-size: 6px;
+    font-size: 14px;
     cursor: pointer;
     margin: 5;
+    margin-right: 20;
+    border: none;
+    border-radius: 2px;
   }
+.letsCookButton {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  background-color: #0fb9b1;
+  border: none;
+  border-radius: 2px;
+  margin: 20;
+  height: 35px;
+  width: 180px;
+}
+
+
+
+
+
 .main {
   display: flex;
-  margin: 15;
+  margin: 25;
+  margin-top: 50;
   justify-content: space-evenly;
 }
+
 .courseOptionsBox {
-  height: 200px;
-  width: 200px;
   background-color: rgba(225, 225, 225, .9);
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   animation: fade-in 0.5s
 }
 .courseOptions{
@@ -49,29 +70,43 @@ button:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   flex-direction: column;
-  align-content: space-between;
-  
 }
+
+
 .cookPotBox {
-  height: 200px;
-  width: 200px;
   background-color: rgba(225, 225, 225, .9);
   display: flex;
+  align-items: center;
+  justify-content: center;
   animation: fade-in 0.5s
 }
 
+
+.courseOptionsBox,
+.cookPotBox {
+  height: 350px;
+  width: 350px;
+}
 .img {
-  height: 100px;
-  width: 100px;
-  
+  height: 150px;
+  width: 150px;
 }
-
 h1 {
-  font-size: 16px;
+  font-size: 20px;
+  margin: 10;
+}
+.courseOption{
+  margin: 8;
 }
 
+h1 span {
+  color: red
+}
 
-
+button:hover {
+  background-color: rgba(255, 255, 255, 0.55);
+  transition: all 0.4s;
+}
 @keyframes fade-in{
   0% {
     opacity: 0;
@@ -82,6 +117,9 @@ h1 {
     transform: translate(0px);
   }
 }  
+
+
+
 /* font-family: 'Roboto', sans-serif;
 
 COLORS
