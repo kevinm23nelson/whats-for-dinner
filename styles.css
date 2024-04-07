@@ -1,3 +1,4 @@
+/* Sections of the page */
 body {
     background-image: url('assets/burger-friends.jpg');
     background-size: cover;
@@ -11,16 +12,15 @@ body {
     width: 100%;
     animation: fade-in 0.5s
   }
-.headline{
-    font-size: 28px;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+  .main {
+    display: flex;
     margin: 25;
-    margin-left: 30;
+    margin-top: 50;
+    justify-content: space-evenly;
   }
 
 
-
+/* Buttons of the page */
 .addRecipeButton {
     background-color: rgb(223, 217, 217);
     color: black;
@@ -45,16 +45,11 @@ body {
 }
 
 
-
-
-
-.main {
+/* "Boxes" of the page */
+.clearButtonBox{
   display: flex;
-  margin: 25;
-  margin-top: 50;
-  justify-content: space-evenly;
+  align-items: flex-end;
 }
-
 .courseOptionsBox {
   background-color: rgba(225, 225, 225, .9);
   border: none;
@@ -62,7 +57,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   animation: fade-in 0.5s
 }
 .courseOptions{
@@ -70,33 +64,55 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   flex-direction: column;
+  animation: drop-in 1000ms;
 }
-
-
 .cookPotBox {
   background-color: rgba(225, 225, 225, .9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: fade-in 0.5s
-}
-
-.cookPotBox p {
+  align-content: center;
+  font-size: 30px;
   animation: fade-in 0.5s ease-in-out;
 }
-
+.cookPotBox img {
+  height: 200px;
+  width: 200px;
+  margin: 100;
+  animation: drop-in 1000ms;
+}
 .courseOptionsBox,
 .cookPotBox {
-  height: 350px;
-  width: 350px;
+  height: 400px;
+  width: 400px;
 }
-.img {
-  height: 150px;
-  width: 150px;
+
+
+/* General styling */
+.headline{
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  margin: 25;
+  margin-left: 30;
+}
+.cookPotBox p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  animation: fade-in 0.5s ease-in-out;
+}
+.cookBoxTitle {
+  font-weight: 100;
+  font-size: 18px;
+  font-style: italic;
+}
+.cookBoxSingleCourseTitle{
+  font-weight: 100;
+  font-size: 18px;
+  font-style: italic;
 }
 h1 {
   font-size: 26px;
   margin: 10;
+  animation: drop-in 1000ms;
 }
 .courseOption{
   margin: 8;
@@ -106,9 +122,16 @@ h1 span {
   color: red
 }
 
+/* Animations and transitions and effects */
+
 button:hover {
-  background-color: rgba(255, 255, 255, 0.55);
-  transition: all 0.4s;
+  background-color: rgba(219, 195, 195, 0.55);
+  transition: all 0.2s;
+  animation: grow-and-shrink;
+  animation: grow-and-shrink 2000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 @keyframes fade-in{
   0% {
@@ -120,7 +143,32 @@ button:hover {
     transform: translate(0px);
   }
 }  
-
+@keyframes drop-in {
+  from {
+    transform:
+      rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform:
+      rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes grow-and-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.headline {
+  animation: drop-in 1000ms;
+}
 
 
 /* font-family: 'Roboto', sans-serif;
